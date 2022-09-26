@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Es una actividad que combina html y bootstrap">
+    <meta name="author" content="Fabiana Vanesa Lopez">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <title>Actividad Bootstrap</title>
+</head>
+<body>
+  <!--NAVEGACION-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Codo a Codo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Desactivado</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+      <!--TARJETAS-->
+        <section>
+          <div class="container-fluid">
+            <div class="card-group">
+                <div class="card">
+                  <img src="./imagenes/html.png" height="215" class="card-img-top" alt="imagen html">
+                  <div class="card-body">
+                    <h5 class="card-title">titulo 1</h5>
+                    <p class="card-text">Contenido de Card</p>
+                    <p class="card-text"><small class="text-muted">Ultima actualización 1</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./imagenes/css.png" height="215" class="card-img-top" alt="imagen css">
+                  <div class="card-body">
+                    <h5 class="card-title">titulo 2</h5>
+                    <p class="card-text">Contenido de Card</p>
+                    <p class="card-text"><small class="text-muted">Ultima actualización 1</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./imagenes/bootstrap.png" height="215" class="card-img-top" alt="imagen bootstrap">
+                  <div class="card-body">
+                    <h5 class="card-title">titulo 3</h5>
+                    <p class="card-text">Contenido de Card</p>
+                    <p class="card-text"><small class="text-muted">Ultima actualización 1</small></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+      <!--FORMULARIO-->  
+        <section>
+            <form>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                    <p><small>Nunca comparta su email.</small></p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                  </div>
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Verificar
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+              </form>
+        </section>
+    </main>
+</body>
+</html>
